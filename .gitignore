@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+.netlify/
+# 평문 원본은 이 리포에 두지 않는다 (Drive 에만 보관)
+*plaintext*
+*launcher-*.html
