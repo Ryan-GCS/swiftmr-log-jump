@@ -23,8 +23,7 @@ ITER = 150000
 
 src_path, out_path = sys.argv[1], sys.argv[2]
 if len(sys.argv) < 4:
-    sys.exit("암호를 인자로 넘기세요. 이 파일에 암호를 적어 두지 마십시오.
-"
+    sys.exit("암호를 인자로 넘기세요. 이 파일에 암호를 적어 두지 마십시오.\n"
              "  python build_encrypted.py <평문.html> <출력.html> <암호>")
 password = sys.argv[3]
 
