@@ -1,15 +1,15 @@
 # swiftmr-log-jump.netlify.app — 정적 사이트, 빌드 없음
+# publish 는 반드시 "public" 으로 둔다. "." 로 바꾸면 README 와 빌드 스크립트까지 서빙된다.
 [build]
-  publish = "."
+  publish = "public"
 
-# Notion 등에 iframe 임베드를 쓰려면 X-Frame-Options 를 넣지 않는다.
-# 임베드가 필요 없으면 아래 두 줄의 주석을 풀어 클릭재킹을 막는다.
 [[headers]]
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
     X-Robots-Tag = "noindex, nofollow, noarchive"
     Referrer-Policy = "no-referrer"
+    # Notion 등에 iframe 임베드가 필요 없으면 아래 두 줄의 주석을 풀어 클릭재킹을 막는다.
     # X-Frame-Options = "SAMEORIGIN"
     # Content-Security-Policy = "frame-ancestors 'self'"
 
